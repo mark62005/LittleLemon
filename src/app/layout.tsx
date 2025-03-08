@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Markazi_Text, Karla } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils";
 
 const markaziTextSans = Markazi_Text({
 	variable: "--font-markazi",
@@ -38,7 +39,11 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className={`${markaziTextSans.variable} ${karlaSans.variable} antialiased`}
+				className={cn(
+					"antialiased",
+					markaziTextSans.className,
+					karlaSans.className
+				)}
 			>
 				{children}
 			</body>
