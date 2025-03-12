@@ -3,7 +3,7 @@ import HeroSection from "@/components/sections/hero";
 import MenuSection from "@/components/sections/menu";
 import FoodGallerySection from "@/components/sections/food-gallery";
 import ReservationFormSection from "@/components/sections/reservation-form";
-import Footer from "@/components/Footer";
+import Footer from "@/components/footer";
 import BackToTopButton from "@/components/BackToTopButton";
 
 export default function Home() {
