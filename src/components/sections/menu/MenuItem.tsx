@@ -1,18 +1,20 @@
-function MenuItem() {
-	return (
-		<div className="">
-			<div className="flex justify-between items-center">
-				{/* NAME */}
-				<p className="">Food 1</p>
+import { getFormattedPrice } from "@/lib/utils";
 
-				{/* PRICE */}
-				<p className="">19.99</p>
+interface MenuItemProps {
+	dish: Dish;
+}
+
+function MenuItem({ dish }: MenuItemProps) {
+	const { dishName, price, description } = dish;
+
+	return (
+		<div className="col-span-1">
+			<div className="flex justify-between items-center font-medium">
+				<p className="uppercase">{dishName}</p>
+				<p>{getFormattedPrice(price)}</p>
 			</div>
 
-			{/* DESCRIPTION */}
-			<p className="">
-				Lorem ipsum dolor sit amet consectetur adipisicing. Nesciunt, vitae
-			</p>
+			<p className="w-3/4 font-light">{description}</p>
 		</div>
 	);
 }

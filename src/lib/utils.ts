@@ -16,3 +16,11 @@ export function arrayCeil(arr: number[], number: number) {
 	// If no index found return the last element
 	return sorted[sorted.length - 1];
 }
+
+export function getLabelFor(str: string): string {
+	return str.replaceAll("_", " ");
+}
+
+export function getFormattedPrice(price: number): string {
+	return price.toFixed(2);
+}
