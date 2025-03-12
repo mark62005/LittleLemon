@@ -1,14 +1,11 @@
 import Link from "next/link";
+import { NAV_LINKS_CONFIG } from "@/lib/constants";
 import { Button } from "@/components/ui/button";
 
-interface NavbarProps {
-	navLinks: NavLink[];
-}
-
-function Navbar({ navLinks }: NavbarProps) {
+function Navbar() {
 	return (
 		<nav className="hidden justify-around items-center lg:flex">
-			{navLinks.map((navLink: NavLink) => (
+			{NAV_LINKS_CONFIG.map((navLink: NavLink) => (
 				<Link
 					href={navLink.href}
 					key={navLink.href}
