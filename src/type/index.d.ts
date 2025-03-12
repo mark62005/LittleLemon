@@ -1,4 +1,5 @@
 declare global {
+	/* MENU */
 	interface Menu {
 		menuName: string;
 		categories: Category[];
@@ -13,6 +14,12 @@ declare global {
 		dishName: string;
 		description: string;
 		price: number;
+	}
+
+	/* UTILS */
+	interface NavLink {
+		label: string;
+		href: string;
 	}
 }
 
