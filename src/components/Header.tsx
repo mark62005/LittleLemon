@@ -15,7 +15,7 @@ const NAV_LINKS_CONFIG = [
 	},
 	{
 		label: "Reserve a table",
-		href: "reserve",
+		href: "/reserve",
 	},
 ];
 
@@ -29,7 +29,7 @@ function Header() {
 					{/* RIGHT SIDE */}
 					<div className="flex justify-between items-center gap-2 md:gap-3">
 						{/* BOOK A TABLE BUTTON */}
-						<Link href="#reserve">
+						<Link href="/reserve">
 							<Button>Book a table</Button>
 						</Link>
 

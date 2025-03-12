@@ -57,7 +57,7 @@ function HeroSection() {
 
 					{/* BOOK A TABLE BUTTON */}
 					<Button>
-						<Link href="#reserve">Book a table</Link>
+						<Link href="reserve">Book a table</Link>
 					</Button>
 				</div>
 			</MaxWidthWrapper>
