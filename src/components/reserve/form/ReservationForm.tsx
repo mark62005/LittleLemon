@@ -8,6 +8,19 @@ import { Button } from "@/components/ui/button";
 import { Form } from "@/components/ui/form";
 import CustomFormField from "./CustomFormField";
 
+const OCCASION_OPTIONS = [
+	{ value: "birthday", label: "Birthday" },
+	{ value: "engagement", label: "Engagement" },
+	{
+		value: "anniversary",
+		label: "Anniversary",
+	},
+	{
+		value: "other",
+		label: "Other",
+	},
+];
+
 function ReservationForm() {
 	const { navigateToStep } = useReserveNavigation();
 
@@ -17,6 +30,7 @@ function ReservationForm() {
 			firstName: "",
 			lastName: "",
 			email: "",
+			occasion: "",
 			specialRequests: "",
 		},
 	});
@@ -30,6 +44,7 @@ function ReservationForm() {
 			firstName: data.firstName,
 			lastName: data.lastName,
 			email: data.email,
+			occasion: data.occasion,
 			specialRequests: data.specialRequests,
 		};
 		console.log("Reservation sent: ", reservation);
@@ -66,6 +81,16 @@ function ReservationForm() {
 					label="Email (required)"
 					placeholder="example@email.com"
 				/>
+				{/* OCCASION */}
+				<CustomFormField
+					type="select"
+					name="occasion"
+					label="Occasion (optional)"
+					options={OCCASION_OPTIONS}
+					placeholder="Select an occasion"
+					inputClassName="w-full"
+				/>
+
 				{/* SPECIAL REQUESTS */}
 				<CustomFormField
 					type="textarea"

@@ -9,6 +9,7 @@ export const reservationSchema = z.object({
 		.email(
 			"Invalid email address, please follow the format: example@email.com"
 		),
+	occasion: z.string(),
 	specialRequests: z
 		.string()
 		.max(2500, "This message must not exceed 2500 charaters"),
