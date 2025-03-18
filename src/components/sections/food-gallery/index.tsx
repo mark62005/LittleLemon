@@ -24,7 +24,6 @@ function FoodGallerySection() {
 						align: "center",
 						loop: true,
 					}}
-					// className="w-4/5 mx-auto md:w-full"
 				>
 					<CarouselContent>
 						{IMAGE_URLS.map((url) => (
@@ -36,8 +35,8 @@ function FoodGallerySection() {
 							</CarouselItem>
 						))}
 					</CarouselContent>
-					<CarouselPrevious />
-					<CarouselNext />
+					<CarouselPrevious className="hidden md:inline-flex" />
+					<CarouselNext className="hidden md:inline-flex" />
 				</Carousel>
 			</MaxWidthWrapper>
 		</section>
