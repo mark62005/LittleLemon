@@ -40,7 +40,7 @@ export default function RootLayout({
 		<html lang="en">
 			<body
 				className={cn(
-					"antialiased",
+					"min-h-screen antialiased",
 					markaziTextSans.className,
 					karlaSans.className
 				)}
