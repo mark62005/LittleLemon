@@ -3,7 +3,10 @@ import Menu from "./Menu";
 
 function MenuSection() {
 	return (
-		<section className="bg-primary">
+		<section
+			id="menu"
+			className="bg-primary"
+		>
 			<MaxWidthWrapper className="bg-white w-11/12">
 				<Menu />
 			</MaxWidthWrapper>
