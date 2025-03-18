@@ -10,7 +10,7 @@ function HomeLayout({
 	return (
 		<>
 			<Header />
-			<main className="">{children}</main>
+			{children}
 			<Footer />
 
 			<BackToTopButton />
