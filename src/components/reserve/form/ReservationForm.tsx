@@ -44,8 +44,8 @@ function ReservationForm() {
 			firstName: data.firstName,
 			lastName: data.lastName,
 			email: data.email,
-			occasion: data.occasion,
-			specialRequests: data.specialRequests,
+			occasion: data.occasion ?? "",
+			specialRequests: data.specialRequests ?? "",
 		};
 		console.log("Reservation sent: ", reservation);
 
