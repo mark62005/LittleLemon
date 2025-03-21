@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
-import Footer from "@/components/footer";
-import BackToTopButton from "@/components/BackToTopButton";
+import Footer from "@/components/Footer";
+import BackToTopButton from "@/components/shared/BackToTopButton";
 
 function HomeLayout({
 	children,

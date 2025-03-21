@@ -1,5 +1,5 @@
 import MenuSection from "@/components/sections/MenuSection";
-import FoodGallerySection from "@/components/sections/food-gallery";
+import FoodGallerySection from "@/components/sections/FoodGallerySection";
 
 function MenuPage() {
 	return (
