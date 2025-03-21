@@ -1,5 +1,5 @@
 import MaxWidthWrapper from "@/components/shared/MaxWidthWrapper";
-import Menu from "./Menu";
+import Menu from "@/components/shared/Menu";
 
 function MenuSection() {
 	return (
