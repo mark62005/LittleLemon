@@ -1,6 +1,6 @@
-import HeroSection from "@/components/sections/hero";
+import HeroSection from "@/components/sections/HeroSection";
 import MenuSection from "@/components/sections/MenuSection";
-import FoodGallerySection from "@/components/sections/food-gallery";
+import FoodGallerySection from "@/components/sections/FoodGallerySection";
 
 export default function Home() {
 	return (

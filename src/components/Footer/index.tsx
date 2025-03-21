@@ -1,7 +1,7 @@
 import { FooterSectionType } from "@/type/enum";
 import { Separator } from "../ui/separator";
 import MaxWidthWrapper from "../shared/MaxWidthWrapper";
-import FooterSection from "./Section";
+import FooterSection from "./FooterSection";
 import SocialMedias from "./SocialMedias";
 import Copyright from "./Copyright";
 
