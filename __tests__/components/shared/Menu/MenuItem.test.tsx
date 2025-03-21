@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import MenuItem from "@/components/sections/menu/MenuItem";
+import MenuItem from "@/components/shared/Menu/MenuItem";
 
 describe("MenuItem", () => {
 	const renderComponent = () => {

@@ -11,7 +11,10 @@ function Category({ category, className }: CategoryProps) {
 	const { categoryName, dishes } = category;
 
 	return (
-		<div className={cn("grid grid-cols-1 gap-3 mt-4", className)}>
+		<div
+			className={cn("grid grid-cols-1 gap-3 mt-4", className)}
+			role="menu-category"
+		>
 			<h4 className="col-span-1 uppercase font-bold text-lg">{categoryName}</h4>
 
 			{dishes.map((dish) => (

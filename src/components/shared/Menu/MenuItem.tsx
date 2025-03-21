@@ -8,7 +8,10 @@ function MenuItem({ dish }: MenuItemProps) {
 	const { dishName, price, description } = dish;
 
 	return (
-		<div className="col-span-1">
+		<div
+			className="col-span-1"
+			data-testid="menu-item"
+		>
 			<div className="flex justify-between items-center font-medium">
 				<p
 					className="uppercase"
