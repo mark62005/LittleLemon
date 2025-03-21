@@ -1,4 +1,4 @@
-import MenuSection from "@/components/sections/menu";
+import MenuSection from "@/components/sections/MenuSection";
 import FoodGallerySection from "@/components/sections/food-gallery";
 
 function MenuPage() {
