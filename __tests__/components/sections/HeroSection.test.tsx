@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import HeroSection from "@/components/sections/hero";
+import HeroSection from "@/components/sections/HeroSection";
 
 describe("HeroSection", () => {
 	it("should render a background image", () => {
